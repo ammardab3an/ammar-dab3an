@@ -15,26 +15,13 @@ class App extends React.Component {
 
     async componentDidMount(){
 
-        const res = await fetch('https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json')
+        const res = await fetch('./quotes.json')
         const data = await res.json()
         
         this.setState({
             quotes: data.quotes,
             selected_quote_idx: Math.floor(Math.random() * data.quotes.length)
         })
-
-        const scripts = [
-            "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.minui/1.12.0/jquery-ui.min.js.js",
-            "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js",
-            "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"
-        ]
-
-        scripts.forEach(src => {
-            const script = document.createElement("script");
-            script.src = src;
-            script.async = true;
-            document.body.appendChild(script);
-        });
     }
     
     updateBackGroundColor(){
