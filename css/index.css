@@ -10,10 +10,6 @@ body {
     background: linear-gradient(-45deg, #f1a289, #e46f9c, #66bcdb, #61d6bb);
 }
 
-li{
-    list-style: none;
-}
-
 .container {
     width: 400px;
     margin: 1em;
@@ -28,6 +24,10 @@ li{
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: center;
+}
+
+li{
+    list-style: none;
 }
 
 /* end global rules */
