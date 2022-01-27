@@ -28,10 +28,8 @@ body{
 }
 
 .container{
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0px 15px;
+    margin: 50px auto;
 }
 
 
@@ -68,6 +66,8 @@ a{
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .main-heading h2{
@@ -115,6 +115,10 @@ a{
     max-width: 600px;
 }
 
+ul{
+    margin: 0;
+    padding: 0;
+}
 /* end global rules */
 
 /* header */
@@ -135,6 +139,9 @@ header .container{
     align-items: center;
     background-color: transparent;
     position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 header .container .header-nav{
@@ -440,6 +447,8 @@ header .container .header-nav ul:target a{
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .portfolio .shuffle li{
     padding: 10px;
@@ -472,7 +481,7 @@ header .container .header-nav ul:target a{
     padding: 20px;
     position: absolute;
     bottom: -100%;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.644);
     transition: 0.4s;
     z-index: 1;
 }
@@ -499,7 +508,7 @@ header .container .header-nav ul:target a{
 
     text-align: center;
     padding: 10px 20px;
-    margin: 50px auto;
+    margin: 40px auto;
     box-sizing: border-box;
 
     text-transform: uppercase;
@@ -675,7 +684,6 @@ header .container .header-nav ul:target a{
 .our-skills .container{
     display: flex;
     flex-flow: row wrap;
-    margin-top: 100px;
 }
 
 .our-skills .container .title{
@@ -860,10 +868,6 @@ header .container .header-nav ul:target a{
     min-height: 100vh;  
 }
 
-.pricing .container{
-
-}
-
 .pricing .container .plans{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -939,6 +943,7 @@ header .container .header-nav ul:target a{
 .pricing .container .plan .foot a{
     padding: 15px 20px;
     border: 1px solid var(--main-color);
+    color: black;
 }
 
 .pricing .container .contact-us{
@@ -1020,6 +1025,11 @@ header .container .header-nav ul:target a{
     width: 150px;
     padding: 20px;
     border: none;
+    color: white;
+    background-color: transparent;
+}
+
+.subscribe .container form ::placeholder{
     color: white;
     background-color: transparent;
 }
