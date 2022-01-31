@@ -33,6 +33,12 @@ li{
     list-style: none;
 }
 
+.new::after{
+    content: "New!";
+    margin-left: 1ch;
+    background-color: lightgreen;
+}
+
 /* end global rules */
 
 
