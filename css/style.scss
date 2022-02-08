@@ -1,0 +1,64 @@
+.container {
+
+    width: 400px;
+    margin: 10px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    
+    .title {
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+li{
+    list-style: none;
+}
+
+.new::after{
+    content: "New!";
+    margin-left: 1ch;
+    background-color: lightgreen;
+}
+
+body{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header{
+    width: 100%;
+}
+
+.title-box{
+
+    .container{
+        
+        padding: 10px;
+        margin: 10px auto;
+    
+        h2{
+            margin: 0;
+            color: black;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 300;
+            letter-spacing: -0.1ch;
+        }
+    }
+}
+
+.cards-group{
+    display: flex;
+    flex-flow: column nowrap;
+}
