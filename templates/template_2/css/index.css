@@ -623,7 +623,7 @@ header .container .header-nav ul:target a{
     z-index: 1;
 }
 
-.stats .container{
+.stats .    {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
