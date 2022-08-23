@@ -191,7 +191,7 @@ function gen_category(category) {
     return (
         <div class="col">
             <img class="d-block w-75 m-auto" src={category.img} alt={category.name}></img>
-            <h3 class="fs-6 fw-bold">${category.name}</h3>
+            <h3 class="fs-6 fw-bold">{category.name}</h3>
         </div>
     )
 }
